@@ -30,7 +30,7 @@
         }
 
         body {
-            background-color: var(--paper);
+            background-color: transparent;
             color: var(--ink);
             font-family: var(--font-body);
             margin: 0;
@@ -39,6 +39,38 @@
             text-align: center;
             font-size: clamp(18px, 4vw, 22px);
             font-weight: 300;
+        }
+
+        .bg-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -20;
+            background-image: url('fondo.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            image-rendering: -webkit-optimize-contrast;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transform: translateZ(0);
+            will-change: transform;
+        }
+
+        .grain-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.015;
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            mix-blend-mode: multiply;
         }
 
         /* El paspartú: Un marco físico sutil en la pantalla */
@@ -227,6 +259,8 @@
 
 <body>
 
+    <div class="bg-image"></div>
+    <div class="grain-overlay"></div>
     <div class="passepartout"></div>
 
     <div class="container">
