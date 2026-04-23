@@ -24,6 +24,11 @@
             --font-body: 'EB Garamond', serif;
         }
 
+        html, body {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
         body {
             background-color: var(--paper);
             color: var(--ink);
@@ -32,7 +37,7 @@
             padding: 0;
             -webkit-font-smoothing: antialiased;
             text-align: center;
-            font-size: clamp(16px, 3vw, 18px);
+            font-size: clamp(18px, 4vw, 22px);
             font-weight: 300;
         }
 
@@ -74,7 +79,7 @@
 
         .pre-title {
             font-style: italic;
-            font-size: clamp(1.25rem, 4vw, 1.5rem);
+            font-size: clamp(1.6rem, 5vw, 2.2rem);
             color: var(--ink-light);
             margin-bottom: 2.5rem;
         }
@@ -89,12 +94,12 @@
         .macro-text {
             text-transform: uppercase;
             letter-spacing: 0.25em;
-            font-size: clamp(0.85rem, 3vw, 1.1rem);
+            font-size: clamp(1.1rem, 4vw, 1.5rem);
             color: var(--ink-light);
         }
 
         .body-text {
-            font-size: clamp(1.2rem, 4vw, 1.5rem);
+            font-size: clamp(1.6rem, 5vw, 2rem);
             line-height: 1.6;
             color: var(--ink-light);
             margin: 0 auto;
@@ -142,19 +147,19 @@
         }
 
         .event-time {
-            font-size: clamp(2rem, 6vw, 3rem);
+            font-size: clamp(2.8rem, 8vw, 4rem);
             margin-bottom: 0.5rem;
             font-style: italic;
         }
 
         .event-place {
-            font-size: clamp(1.5rem, 4vw, 1.8rem);
+            font-size: clamp(1.8rem, 6vw, 2.5rem);
             margin-bottom: 0.25rem;
         }
 
         .event-address {
             font-style: italic;
-            font-size: clamp(1.1rem, 3.5vw, 1.3rem);
+            font-size: clamp(1.4rem, 5vw, 2rem);
             color: var(--ink-light);
             margin-bottom: 2rem;
         }
@@ -199,7 +204,7 @@
 
         /* Padrinos & Regalos */
         .padrinos-names {
-            font-size: clamp(1.5rem, 5vw, 2rem);
+            font-size: clamp(1.8rem, 6vw, 2.6rem);
             margin: 2rem 0;
             line-height: 1.8;
         }
@@ -256,8 +261,6 @@
             <h2 class="event-time">9 de la mañana</h2>
             <h3 class="event-place">Gimnasio Auditorio</h3>
             <p class="event-address">Instituto Francés de la Laguna</p>
-            <a href="https://maps.google.com/?q=Instituto+Frances+de+la+Laguna" target="_blank"
-                class="action-link">Indicaciones</a>
             <iframe class="map-container"
                 src="https://maps.google.com/maps?q=Instituto+Frances+de+la+Laguna&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -270,8 +273,6 @@
             <h2 class="event-time">2 de la tarde</h2>
             <h3 class="event-place">Alberca Baba Paty</h3>
             <p class="event-address">Morelos 1321 Sur</p>
-            <a href="https://maps.google.com/?q=Morelos+1321+Sur,+Torreon" target="_blank"
-                class="action-link">Indicaciones</a>
             <iframe class="map-container"
                 src="https://maps.google.com/maps?q=Morelos+1321+Sur,+Torreon&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -281,7 +282,7 @@
 
         <!-- Dress Code -->
         <section class="reveal">
-            <h2 class="display" style="font-size: 2.5rem; margin-bottom: 2rem;">Dress Code</h2>
+            <h2 class="display" style="font-size: clamp(3rem, 10vw, 4rem); margin-bottom: 2rem;">Dress Code</h2>
             <p class="body-text" style="margin-bottom: 2rem;">
                 Misa: Casual elegante.<br><span style="font-style: italic;">Un toque especial para la ceremonia.</span>
             </p>
@@ -307,7 +308,7 @@
 
         <!-- Regalos -->
         <section class="reveal">
-            <h2 class="display" style="font-size: 2.2rem; font-style: italic; margin-bottom: 1.5rem;">Un Detalle
+            <h2 class="display" style="font-size: clamp(2.8rem, 8vw, 3.5rem); font-style: italic; margin-bottom: 1.5rem;">Un Detalle
                 Especial</h2>
             <p class="body-text">Con mucho cariño, hemos preparado este día tan especial. Si deseas acompañarlo con un detalle, un sobre será bien recibido.</p>
         </section>
